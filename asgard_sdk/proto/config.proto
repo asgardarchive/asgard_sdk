@@ -1,0 +1,18 @@
+syntax = "proto3";
+package asgard;
+
+message ServerConfig {
+    string mongo_ip = 1;
+    uint32 mongo_port = 2;
+    
+    string plex_ip = 3;
+    uint32 plex_port = 4;
+    string plex_token = 5;
+
+    string server_name = 6;
+}
+
+message ClientConfig {
+    string api_ip = 1;
+    uint32 api_port = 2;
+}

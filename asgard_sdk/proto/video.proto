@@ -1,0 +1,14 @@
+syntax = "proto3";
+package asgard;
+
+import "file.proto";
+
+message Video {
+    File file = 1;
+    string container = 2;
+    string encoder = 3;
+    uint64 duration = 4;
+    string release_type = 5;
+    uint32 width = 6;
+    uint32 height = 7;
+}

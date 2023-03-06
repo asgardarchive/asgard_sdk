@@ -1,0 +1,27 @@
+syntax = "proto3";
+package asgard;
+
+import "file.proto";
+
+message Season {
+    File file = 1;
+    uint32 season_number = 2;
+    uint32 episode_count = 3;
+
+    uint32 season_title = 4;
+
+    repeated Episode episodes = 5;
+}
+
+message Episode {
+    File file = 1;
+    uint32 episode_number = 2;
+}
+
+message TVSeries {
+    File file = 1;
+    int32 season_count = 2;
+    uint32 episode_count = 3;
+
+    repeated Season seasons = 4;
+}

@@ -1,0 +1,28 @@
+syntax = "proto3";
+package asgard;
+
+enum AsgardType {
+    VIDEO = 0;
+    VIDEO_SERIES = 1;
+    GAMES = 2;
+    MUSIC = 3;
+    DOCUMENT = 4;
+    OTHER = 5;
+}
+
+message File {
+    string file_name = 1;
+    string file_location = 2;
+    int32 file_size = 3;
+    AsgardType asgard_type = 4;
+
+    string section_name = 5;
+
+    string sha256 = 6;
+
+    string uploaded_date = 7;
+    string uploaded_user = 8;
+
+    string description = 9;
+    repeated string tags = 10;
+}

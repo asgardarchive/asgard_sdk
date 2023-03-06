@@ -1,0 +1,10 @@
+syntax = "proto3";
+package asgard;
+
+import "file.proto";
+
+message Game {
+    File file = 1;
+    string region = 2;
+    string console = 3;
+}

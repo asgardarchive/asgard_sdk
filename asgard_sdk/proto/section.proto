@@ -1,0 +1,16 @@
+syntax = "proto3";
+package asgard;
+
+import "file.proto";
+
+message Section {
+    string section_name = 1;
+    string section_description = 2;
+    uint32 section_count = 3;
+    AsgardType type = 4;
+
+    string section_path = 5;
+
+    string mongo_collection = 6;
+    string plex_section = 7;
+}

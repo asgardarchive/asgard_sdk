@@ -1,0 +1,8 @@
+pymediainfo
+protobuf
+plexapi
+ebooklib
+PyPDF2
+requests
+pymongo
+ffmpeg-python

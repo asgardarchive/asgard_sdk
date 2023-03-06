@@ -1,0 +1,19 @@
+syntax = "proto3";
+package asgard;
+
+import "file.proto";
+
+enum DocumentType {
+    PDF = 0;
+    EPUB = 1;
+    LIT = 2;
+}
+
+message Document {
+    File file = 1;
+    string title = 2;
+    string author = 3;
+    uint32 page_count = 4;
+    string identifier = 5;
+    DocumentType type = 6;
+}

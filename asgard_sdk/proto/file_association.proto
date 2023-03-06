@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package asgard;
+
+message FileAssociation {
+    string type = 1;
+    string extensions = 2;
+}
