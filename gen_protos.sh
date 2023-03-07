@@ -1,3 +1,3 @@
 #!/bin/bash
 
-protoc --python_out asgard_sdk/models proto/*.proto
+protoc -I proto/ --python_out asgard_sdk/models proto/*.proto
